@@ -40,12 +40,11 @@ object Build : BuildType({
     }
 
     steps {
-        python {
-            id = "python_runner"
-            command = script {
-                content = """print ("Running a Python script...")"""
+            csharpScript {
+                id = "csharpScript"
+                content = """Console.WriteLine("Running a CSharp script...");"""
+                tool = "%teamcity.tool.TeamCity.csi.DEFAULT%"
             }
-        }
     }
 
     triggers {
