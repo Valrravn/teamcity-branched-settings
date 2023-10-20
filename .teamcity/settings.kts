@@ -1,6 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.buildFeatures.perfmon
-import jetbrains.buildServer.configs.kotlin.buildSteps.python
+import jetbrains.buildServer.configs.kotlin.buildSteps.csharpScript
 import jetbrains.buildServer.configs.kotlin.triggers.vcs
 
 /*
